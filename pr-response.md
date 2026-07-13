@@ -26,8 +26,13 @@ I used tests/test_collection.py as my model, following its fixture structure (ap
 
 ## Comment 4 — Default visibility
 **My position:**
+I think that default visiblity should not be `public=True`. I have changed it to `public=False`
+
 **Reasoning:**
+The default visibility should not be public, in my opinion. I think that the default should be private, or `public=False`. I think that users should have the option to opt in to making their watchlist public. It should not be a default. That way, users are not automatically opted into a watchlist that everyone could see if that was not their choice in the first place.
+
 **Tradeoff acknowledged:**
+I acknowledge that changing the default to `public=False` could have some side effects here. This may require updating any code that assumes watchlists are public by default, but the privacy benefit justifies the change.
 
 ## Comment 5 — Sort order
 **My position:**
