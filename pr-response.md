@@ -119,24 +119,13 @@ Watchlists are sorted by `date_added` in descending order (newest to oldest). Th
 The commit history is also available in the root of the project. The file is `commit_screenshot.png`
 
 ```bash
-3b25fd3 (HEAD -> feature/watchlist) docs: added screenshot of commits
-5b41e14 (origin/feature/watchlist) docs: added Comment 6 to AI Usage section
-76a1f66 docs: added AI Usage section
-b5c35d7 docs: added comments for rebase in pr-response.md
-8e922ab fix: update WatchlistEntry film_id to use UUID (String(36))
-f0a4780 docs: added reasoning to pr-response.md for updating code to list watchlist in date added descending order
-b57b332 fix: updated code to list watchlists in date added descending order
-1079a45 docs: updated pr-response.md to add reason for changing (public=True) to (public=False)
-37136d6 fix: change watchlist default visibility to private (public=False)
-9d69410 fix: added missing WatchlistEntry class
-d78b20d docs: added comments to pr-response.md
-3057277 test: added test to test the adding of a nonexistent film to a watchlist
-1eb7722 feat: Added deduplication logic to watchlist_service.py
-d4ca70a docs: Add pr-response.md
-4ec80f3 fix: Changed function name save_to_watchlist() to add_to_watchlist()
-f8df3a5 fix: update film retrieval method to use db.session.get in collection and watchlist services
-dd4647e feat: Add watchlist service
-cf06e16 feat: Add watchlist routes
+437f5a7 (HEAD -> feature/watchlist) fix: Update WatchlistEntry film_id to use UUID
+6e884a7 fix: Update watchlist ordering by date added descending
+f813d13 fix: Change watchlist default visibility to private
+d5aec06 feat: Add watchlist feature with deduplication and tests
+bf2e728 fix: Changed function name save_to_watchlist() to add_to_watchlist()
+1df326d fix: update film retrieval method to use db.session.get in collection and watchlist services
+fb7e871 feat: Add watchlist feature with deduplication
 bbe206c (origin/main, origin/HEAD, cinelog/main, cinelog/HEAD, main) Merge pull request #2 from ascherj/chore/add-gitignore
 718a9a8 chore: add .gitignore for generated files
 07ca580 refactor: migrate film IDs from integer to UUID
