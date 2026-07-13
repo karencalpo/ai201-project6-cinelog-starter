@@ -46,7 +46,7 @@ The reviewer makes a good point that users would like to look at their most rece
 
 ## Comment 6 — Rebase
 **What conflicted:**
-I discovered that models.py had a UUID inconsistency: WatchlistEntry.film_id was defined as db.Integer instead of db.String(36), which doesn't match the UUID system used throughout the codebase.
+No merge conflicts occurred during the rebase. However, I discovered that models.py had a UUID inconsistency: WatchlistEntry.film_id was defined as db.Integer instead of db.String(36), which doesn't match the UUID system used throughout the codebase.
 
 **How I resolved it:**
 I updated line 80 of models.py to change:
@@ -64,6 +64,9 @@ Asked AI to evaluate whether my privacy-first reasoning was sound and whether I 
 
 Comment 5 — Sort order:
 Asked AI to review my reasoning against the maintainer's message and identify any gaps. AI confirmed the reasoning aligned well but noted the response was repetitive across the three sections. Based on that feedback, I tightened the language a little to remove duplication while keeping the core points about UX and mental models.
+
+Comment 6 — Rebase:
+Asked AI why the rebase didn't produce a merge conflict despite the instructions mentioning a UUID conflict to resolve. AI explained that the UUID issue was a latent bug (both branches had the same incorrect code), not a merge conflict that Git would flag. Based on that understanding, I reviewed models.py and discovered the inconsistency myself, then asked AI to help me write a clear explanation of what I found and how I fixed it. The final response documents the specific change and verification steps.
 
 ## PR Description
 <!-- Written at the end — feature overview, design decisions, manual testing steps -->
