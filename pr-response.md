@@ -46,8 +46,17 @@ The reviewer makes a good point that users would like to look at their most rece
 
 ## Comment 6 — Rebase
 **What conflicted:**
+I discovered that models.py had a UUID inconsistency: WatchlistEntry.film_id was defined as db.Integer instead of db.String(36), which doesn't match the UUID system used throughout the codebase.
+
 **How I resolved it:**
+I updated line 80 of models.py to change:
+film_id = db.Column(db.Integer, db.ForeignKey("film.id"), nullable=False)
+
+to:
+film_id = db.Column(db.String(36), db.ForeignKey("film.id"), nullable=False)
+
 **How I verified no conflict remains:**
+I reviewed models.py to confirm all film_id references now use String(36) consistently. The working tree is clean and the fix is committed.
 
 ## PR Description
 <!-- Written at the end — feature overview, design decisions, manual testing steps -->
