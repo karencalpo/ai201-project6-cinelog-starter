@@ -58,5 +58,12 @@ film_id = db.Column(db.String(36), db.ForeignKey("film.id"), nullable=False)
 **How I verified no conflict remains:**
 I reviewed models.py to confirm all film_id references now use String(36) consistently. The working tree is clean and the fix is committed.
 
+## AI Usage
+Comment 4 — Default visibility:
+Asked AI to evaluate whether my privacy-first reasoning was sound and whether I was clearly proposing a code change vs. just documenting a decision. AI confirmed the reasoning was solid (privacy-by-default is a best practice) but pointed out I needed to be explicit about whether I was proposing a change to public=False. Based on that feedback, I rewrote my position to clearly state "I have changed it to public=False" and strengthened the tradeoff acknowledgment to address the potential code impact.
+
+Comment 5 — Sort order:
+Asked AI to review my reasoning against the maintainer's message and identify any gaps. AI confirmed the reasoning aligned well but noted the response was repetitive across the three sections. Based on that feedback, I tightened the language a little to remove duplication while keeping the core points about UX and mental models.
+
 ## PR Description
 <!-- Written at the end — feature overview, design decisions, manual testing steps -->
