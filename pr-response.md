@@ -116,10 +116,11 @@ Watchlists are sorted by `date_added` in descending order (newest to oldest). Th
    - Verify `public` field defaults to `false`
 
 ## Commit History
-The commit history is also available in the root of the project. The file is `Screenshot 2026-07-12 at 11.21.42 PM.png`
+The commit history is also available in the root of the project. The file is `commit_screenshot.png`
 
 ```bash
-5b41e14 (HEAD -> feature/watchlist, origin/feature/watchlist) docs: added Comment 6 to AI Usage section
+3b25fd3 (HEAD -> feature/watchlist) docs: added screenshot of commits
+5b41e14 (origin/feature/watchlist) docs: added Comment 6 to AI Usage section
 76a1f66 docs: added AI Usage section
 b5c35d7 docs: added comments for rebase in pr-response.md
 8e922ab fix: update WatchlistEntry film_id to use UUID (String(36))
