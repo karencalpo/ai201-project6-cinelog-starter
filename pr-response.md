@@ -35,9 +35,14 @@ The default visibility should not be public, in my opinion. I think that the def
 I acknowledge that changing the default to `public=False` could have some side effects here. This may require updating any code that assumes watchlists are public by default, but the privacy benefit justifies the change.
 
 ## Comment 5 — Sort order
-**My position:**
+**My position:** 
+I agree with defaulting watchlists to date added order rather than alphabetical.
+
 **Reasoning:**
+I agree with the reviewer that users would like to see what they added recently first. In this case, ordering titles in alphabetical order does not make as much sense.
+
 **Engagement with reviewer's point:**
+The reviewer makes a good point that users would like to look at their most recently title added to their watchlist rather than look at their watchlist in alphabetical order. This makes it easier for them to reference the title they want to see more recently than needing to search through an alphabetical list for the movie(s) they added recently. The code is updated to reflect this.
 
 ## Comment 6 — Rebase
 **What conflicted:**
